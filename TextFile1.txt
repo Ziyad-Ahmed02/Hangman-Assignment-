@@ -1,0 +1,54 @@
+#include<iostream>
+#include <stdio.h> 
+#include <stdlib.h> 
+#include<time.h> 
+using namespace std;
+
+
+
+
+
+int main()
+{
+    string words[30]={"video","cat","name","banana","four","sale","red","exit","morning", "sky", "pen", "warm","mouse","lamp","orange","zero","head","bottle","friend","box","tiny","quick","jam","sun","light","duck","grey","smart","fan","glass" };
+    int l,i, n;
+   string arword[30];
+   char input;
+   
+    cin>> input;
+    for(int a=1;a<=15;a++)
+        {
+            cout<<"_";
+        }
+            cout<<endl;
+for(int b=1;b<=1;b++)
+    {
+    for(int c=1;c<=1;c++)
+        {
+                cout<<"|";
+                
+        }
+        for(int d=1;d<=1;d++)
+              {
+                srand(time(0)); 
+  
+                for( l = 0; l<30; l++) 
+                  {
+                     for(n=0;n<words[l].length(); ++n )
+                          {
+                              
+                              if (words[l+1].at(n) == input)
+                              cout<<input;
+                          }
+                  }
+                
+              }
+                cout<<"|"<<endl;
+       }
+for(int e=1;e<=15;e++)
+ {
+ cout<<"_";
+ }
+
+    return 0;
+}
