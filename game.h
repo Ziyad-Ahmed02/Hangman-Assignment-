@@ -36,10 +36,10 @@ private:
     QGraphicsLineItem *arm2;
     QGraphicsLineItem *leg1;
     QGraphicsLineItem *leg2;
-    QPen green;
+    QPen darkGreen;
     QPen yellow;
     //QPen orange;
-    QPen red;
+    QPen darkBlue;
     QPainter paint;
     int HangmanCounter=0;
 };
