@@ -42,5 +42,9 @@ private:
     QPen darkBlue;
     QPainter paint;
     int HangmanCounter=0;
+    QString words[30] = { "video","cat","name","banana","four","sale","red","exit","morning", "sky", "pen", "warm","mouse","lamp","orange","zero","head","bottle","friend","box","tiny","quick","jam","sun","light","duck","grey","smart","fan","glass" };
+    QString ChosenWord, ChosenMode = "oneWord";
+    int HangmanCounter = 0, score = 0;
+
 };
 #endif // GAME_H

@@ -5,6 +5,14 @@ game::game(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::game)
 {
+    srand(time(0));
+    ChosenWord = words[rand() % 30];
+
+    ui->setupUi(this);
+    for (int i = 0; i < ChosenWord.size(); i++)
+    {
+        ui->label->setText(ui->label->text() + '-');
+    }
     ui->setupUi(this);
     darkGreen=QPen(Qt::darkGreen);
     darkBlue=QPen(Qt::darkBlue);
