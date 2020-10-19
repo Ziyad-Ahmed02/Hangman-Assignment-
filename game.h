@@ -22,6 +22,7 @@ public:
     game(QWidget *parent = nullptr);
     ~game();
     void HangmanDrawer();
+    void endgame(QString);
 
 private:
     Ui::game *ui;

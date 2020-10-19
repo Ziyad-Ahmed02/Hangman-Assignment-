@@ -47,3 +47,41 @@ void game::HangmanDrawer()
         break;
     }
 }
+
+void game::endgame(QString word)
+{
+    //int score = 0, hangMancounter=0, normalLives = 7, hardcoreLives = 60;
+
+    if(ChosenWord == word)
+    {
+        if(ChosenMode == "oneWord")
+        {
+            msgBox.setText("Congratulations, you won!");
+               msgBox.exec();
+            exit(0);
+        }
+        else if(ChosenMode == "normal")
+        {
+
+            if(score < 10)
+            {
+                score++;
+                displayscore();
+                HangmanCounter=0;
+                background->clear();
+                srand(time(0));
+                ChosenWord=words[rand()%30];
+                 ui->label->setText("");
+                for(int i=0;i<ChosenWord.size();i++)
+                {
+                    ui->label->setText(ui->label->text()+'-');
+                }
+            }
+            else
+            {
+                msgBox.setText("Congratulations, you won!");
+                   msgBox.exec();
+                 exit(0);
+            }
+        }
+        else if(ChosenMode == "hard
