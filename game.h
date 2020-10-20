@@ -60,10 +60,8 @@ private:
        QGraphicsLineItem *arm2;
        QGraphicsLineItem *leg1;
        QGraphicsLineItem *leg2;
-       QPen green;
-       QPen yellow;
-       //QPen orange;
-       QPen red;
+       QPen darkGreen;;
+       QPen darkBlue;
        QPainter paint;
        QMessageBox msgBox;
 };
